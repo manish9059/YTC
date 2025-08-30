@@ -45,9 +45,10 @@
             grid-area: header; 
             background-color: #0f0f0f;
             display: flex;
-            justify-content: space-between; 
+            justify-content: center; 
             align-items: center; 
             padding: 0 24px;
+            position: relative;
         }
 
         .main-container {
@@ -121,10 +122,17 @@
             font-size: 16px;
         }
 
-        .header-center, .header-right {
+        .header-center {
+             display: flex;
+             align-items: center;
+        }
+
+        .header-right {
             display: flex;
             align-items: center;
             gap: 20px;
+            position: absolute;
+            right: 24px;
         }
 
         .search-bar { 
@@ -176,7 +184,9 @@
             background-color: #ffffff;
             color: #0f0f0f;
         }
-        .tag:hover { background-color: #3f3f3f; }
+        .tag:hover { 
+            background-color: #3f3f3f; 
+            }
 
         .video-grid {
             display: grid;
@@ -315,5 +325,6 @@
     </div>
 </body>
 </html>
+
 
 
